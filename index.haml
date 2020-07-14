@@ -1,0 +1,37 @@
+!!! 5
+%body   
+    %header
+        %h1 Hello World
+    %section
+        %p Lorem ipsum dolor sit amet.
+    %img(src="flower.jpeg" alt="Flower Home")
+    %section.feature
+    %section.feature.special
+    %section#Hello.feature(role="religion")
+    .awesome
+    .awesome.lesson
+    #getting-started.lesson
+    %input(type="checkbox" checked)
+    .author
+        = @author
+        \= @author
+    %p
+        shay is 
+        = succeed "." do
+            %a{:href => "#"} awesome
+
+    %div 
+        -# 
+            removed line
+            good
+        Actual line
+
+    :javascript
+        $('button').on('click', function(event){
+            $('p').hide('slow');
+        });
+    :css
+        .container {
+            margin: 0 auto;
+            width: 960px;
+        }
